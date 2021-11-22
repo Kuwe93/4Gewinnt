@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="wins4" aria-describedby="playarea">
+            <p id="hint">Zum Spielen bitte abwechselnd auf die Spalte klicken, in der ein Stein platziert werden soll.</p>
+            <label for="playercount">Spieleranzahl (2 - 8):</label>
+            <input id="playercount" type="range" min="2" max="8" value="2">
+            <label for="gamewidth">Spielfeldbreite (7-20):</label>
+            <input id="gamewidth" type="range" min="7" max="20" value="7">
+            <label for="gameheight">Spielfeldhöhe (6 - 20):</label>
+            <input id="gameheight" type="range" min="6" max="20" value="6">
+            <label for="wincondition">Siegbedingung (4 - 7):</label>
+            <input id="wincondition" type="range" min="4" max="7" value="4">
+            <br>
+            <button id="startGame">Start Game</button>
+            <div id="gameboard">
+                <table id="board">
+                    <tr id="insertrow">
+                        <!-- Je nach anzahl der Breite gibt es unterschiedlich viele Header hier. -->
+                    </tr>
+                    <!-- Je nach Breite und Tiefe entsteht hier das Spielbrett. -->
+                </table>
+            </div>
+        </div>
+        <script language="javascript" type="text/javascript" src="js/gamelogic.js"></script>
+    </body>
+</html>

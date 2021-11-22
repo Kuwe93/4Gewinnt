@@ -1,0 +1,76 @@
+/*
+Style of my 4wins-Game. 
+*/
+
+/* The style for the actual Gameboard. */
+.wins4 #gameboard {
+    width:100vmin;
+    display: grid;
+    gap: 0;
+    }
+
+/* The style for the Buttons, where a player can throw in its stones. */
+.wins4 .columnentry {
+    width:10vmin;
+    border: 1px solid black;
+    border-radius: 5vmin;
+    margin: 0;
+    }
+
+/* The style for a field of the Gameboard. */
+.wins4 td {
+    width:10vmin;
+    height:10vmin;
+    background: white;
+    border: 1px solid black;
+}
+
+/* The style of a taken field by player red. */
+.wins4 [aria-label="red"] {
+	background: red;
+}
+
+/* The style of a taken field by player blue. */
+.wins4 [aria-label="blue"] {
+	background: blue;
+}
+
+/* The style of a taken field by player green. */
+.wins4 [aria-label="green"] {
+	background: green;
+}
+
+/* The style of a taken field by player purple. */
+.wins4 [aria-label="purple"] {
+	background: purple;
+}
+
+/* The style of a taken field by player red. */
+.wins4 [aria-label="pink"] {
+	background: pink;
+}
+
+/* The style of a taken field by player blue. */
+.wins4 [aria-label="orange"] {
+	background: orange;
+}
+
+/* The style of a taken field by player green. */
+.wins4 [aria-label="cyan"] {
+	background: cyan;
+}
+
+/* The style of a taken field by player purple. */
+.wins4 [aria-label="Brown"] {
+	background: Brown;
+}
+
+/* The style of the start Game button */
+#startGame {
+    width:15vmin;
+    height: 5vmin;
+    border: 1px solid black;
+    border-radius: 5vmin;
+    margin-bottom: 3vmin;
+    margin-top: 1vmin;
+}
