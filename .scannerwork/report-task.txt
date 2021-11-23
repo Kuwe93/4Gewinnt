@@ -1,0 +1,6 @@
+projectKey=4gewinnt
+serverUrl=http://localhost:9000
+serverVersion=9.1.0.47736
+dashboardUrl=http://localhost:9000/dashboard?id=4gewinnt
+ceTaskId=AX1L4PKrAABKXJL0IOVa
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX1L4PKrAABKXJL0IOVa
