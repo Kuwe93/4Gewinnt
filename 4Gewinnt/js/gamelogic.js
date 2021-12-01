@@ -92,20 +92,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 playingplayers = ["red", "blue", "green", "purple"];
                 break;
             case "5":
-                playingplayers = ["red", "blue", "green", "purple", "pink"];
+                playingplayers = 
+                    ["red", "blue", "green", "purple", "pink"];
                 break;
             case "6":
-                playingplayers = ["red", "blue", "green", "purple", "pink", "orange"];
+                playingplayers = 
+                    ["red", "blue", "green", "purple", "pink", "orange"];
                 break;
             case "7":
-                playingplayers = ["red", "blue", "green", "purple", "pink", "orange", "cyan"];
+                playingplayers = 
+                    ["red", "blue", "green", "purple", "pink", "orange", "cyan"];
                 break;
             case "8":
-                playingplayers = ["red", "blue", "green", "purple", "pink", "orange", "cyan", "Brown"];
+                playingplayers = 
+                    ["red", "blue", "green", "purple", "pink", "orange", "cyan", "Brown"];
                 break;
             default: 
                 alert("Not allowed Playercount selected!");
-                if(confirm("Do you want to reload the page to reset? If no, game starts with 2 players.")) {
+                if(confirm("Do you want to reload the page to reset?"
+                    + "If no, game starts with 2 players.")) {
                     location.reload();
                 } else {
                     playingplayers = ["red", "blue"];
@@ -126,12 +131,14 @@ document.addEventListener('DOMContentLoaded', function () {
         insertStone(field);
         switchActivePlayer();
         checkIfGameEnded();
-        document.querySelector('#hint').innerHTML = 'Spieler <span style="color:' + players[activePlayer] + '">' + players[activePlayer] + '</span> darf das nächste Feld einfärben.';
+        document.querySelector('#hint').innerHTML = 
+            'Spieler <span style="color:' + players[activePlayer] + '">' + players[activePlayer] +
+            '</span> darf das nächste Feld einfärben.';
     }
 
     /**
      * Method to claim a field on the Board.
-     * @param {*} column is the column which the user clicked
+     * @param {*} field is the column which the user clicked
      */
     function insertStone (field) {
         let column = field.textContent;
@@ -181,14 +188,16 @@ document.addEventListener('DOMContentLoaded', function () {
         if (checkDiagonalLeftWinCondition()) {
             winner = checkDiagonalLeftWinCondition();
         }
-        //game ended, because no player can claim a field anymore or a player has met the winning condition
+        //game ended, because no player can claim a field anymore 
+        //or a player has met the winning condition
         if(full || winner) {
             if(winner) {
                 if(confirm('Spieler ' + winner + ' hat gewonnen! Neues Spiel?')) {
                     location.reload();
                 };
             } else {
-                if(confirm('Es gibt keine freien Flächen mehr! Das Spiel endet unentschieden! Neues Spiel?')) {
+                if(confirm('Es gibt keine freien Flächen mehr!'
+                    + 'Das Spiel endet unentschieden! Neues Spiel?')) {
                     location.reload();
                 };
             }
